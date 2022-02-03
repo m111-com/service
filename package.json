@@ -38,5 +38,10 @@
 	},
 	"dependencies": {
 		"express": "^4.17.2"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
 	}
 }
