@@ -1,0 +1,23 @@
+{
+  "name": "service",
+  "version": "0.0.0",
+  "description": "API service for m111",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m111-com/service.git"
+  },
+  "keywords": [
+    "m111",
+    "node"
+  ],
+  "author": "Baygeldi Cholukov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m111-com/service/issues"
+  },
+  "homepage": "https://github.com/m111-com/service#readme"
+}
