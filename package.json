@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/m111-com/service/issues"
   },
-  "homepage": "https://github.com/m111-com/service#readme"
+  "homepage": "https://github.com/m111-com/service#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
 }
