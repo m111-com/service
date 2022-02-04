@@ -2,11 +2,9 @@ FROM node
 
 WORKDIR /var/www/m111
 
-COPY package*.json ./
+COPY . .
 
 RUN npm install
-
-COPY . .
 
 EXPOSE 3000
 
