@@ -24,6 +24,7 @@
 	"homepage": "https://github.com/m111-com/service#readme",
 	"devDependencies": {
 		"@types/express": "^4.17.13",
+		"@types/pg": "^8.6.4",
 		"@typescript-eslint/eslint-plugin": "^5.10.2",
 		"@typescript-eslint/parser": "^5.10.2",
 		"eslint": "^8.8.0",
