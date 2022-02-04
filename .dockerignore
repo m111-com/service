@@ -6,5 +6,6 @@ docker-compose*
 .git
 .gitignore
 README.md
+CODE_OF_CONDUCT.md
 LICENSE
 .vscode
