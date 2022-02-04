@@ -3,7 +3,7 @@ import express, { Application, Request, Response } from 'express';
 
 // Boot express
 const app: Application = express();
-const port = 5000;
+const port = process.env.PORT || 3000;
 
 // Application routing
 app.use('/', (req: Request, res: Response) => {
