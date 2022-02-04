@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express, { Application, Request, Response } from 'express';
 
 // Boot express
