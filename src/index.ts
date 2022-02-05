@@ -1,10 +1,12 @@
 import 'dotenv/config';
 import express, { Application, Request, Response } from 'express';
+import morgan from 'morgan';
 import logger from './utils/logger';
 
 // Boot express
 const app: Application = express();
 const port = process.env.PORT || 3000;
+app.use(morgan('dev'));
 
 app.use('/', (req: Request, res: Response) => {
 	res.status(200).send({ data: 'Hello from m111' });
