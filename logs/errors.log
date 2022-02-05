@@ -1,0 +1,6 @@
+{
+  message: '\x1B[31merror\x1B[39m',
+  level: '\x1B[31merror\x1B[39m',
+  label: '[M111]',
+  timestamp: '2022-02-06 03:02:91'
+}

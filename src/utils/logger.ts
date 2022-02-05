@@ -1,6 +1,6 @@
 import { format, createLogger, addColors, transports } from 'winston';
 
-const { combine, printf, label, colorize, timestamp } = format;
+const { combine, printf, label, colorize, timestamp, prettyPrint } = format;
 
 const config = {
 	levels: {
@@ -26,7 +26,15 @@ const config = {
 addColors(config.colors);
 
 const logger = createLogger({
-	transports: [new transports.Console()],
+	transports: [
+		new transports.Console(),
+		new transports.File({
+			filename: 'errors.log',
+			level: 'error',
+			dirname: `logs`,
+			format: prettyPrint(),
+		}),
+	],
 	levels: config.levels,
 	level: 'silly',
 	format: combine(
@@ -35,7 +43,7 @@ const logger = createLogger({
 		}),
 		colorize({ all: true }),
 		timestamp({
-			format: 'YY-MM-DD HH:MM:SS',
+			format: 'YYYY-MM-DD HH:MM:SS',
 		}),
 		printf(
 			info => `${info.label} ${info.timestamp}  ${info.level} : ${info.message}`
