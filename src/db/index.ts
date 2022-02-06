@@ -8,6 +8,4 @@ const pool = new Pool({
 	port: Number(process.env.DB_PORT) || 5432,
 });
 
-export = {
-	query: (text: string, params: any) => pool.query(text, params),
-};
+export default pool;
